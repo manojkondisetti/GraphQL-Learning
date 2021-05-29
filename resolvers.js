@@ -1,8 +1,9 @@
 // Provide resolver functions for your schema fields
 const resolvers = {
     Query: {
-        hello: () => 'Hello world!',
-    },
+        iTunesSearch: (_, { term }, { dataSources }) =>
+            dataSources.iTunesSearchAPI.getITunesSearchResult({ term })
+    }
 };
 
 // Export the resolvers

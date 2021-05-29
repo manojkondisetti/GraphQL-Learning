@@ -1,5 +1,5 @@
 // Import apollo server lambda
-const { ApolloServer, gql } = require('apollo-server-lambda');
+const {ApolloServer, gql} = require('apollo-server-lambda');
 
 // Import Schema and Resolvers
 const typeDefs = require('./schema');

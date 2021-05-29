@@ -20,3 +20,18 @@
 - After executing point 6 a lambda will be deployed in your AWS account.
 - GET and POST end points for exploring [graphql-playground](https://github.com/graphql/graphql-playground) will be
   visible on terminal after executing point 6.
+
+## Sample Request
+
+```
+query ITunesSearchResult { # Name of the query
+    iTunesSearch(term : "Coldplay") {
+        id
+        kind
+        trackId
+        trackName
+        artistId
+        artistName
+    }
+}
+```
